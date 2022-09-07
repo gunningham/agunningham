@@ -1,29 +1,4 @@
 @charset "utf-8";
-
-/*
-/*	Copyright (c) 2021 marketify
-/*	Author: marketify
-/*	This file is made for CURRENT TEMPLATE
-
-01)	BENY BENY BASE
-02) BENY TOPBAR
-03) BENY MOBILE MENU
-04) BENY HERO
-05) BENY ABOUT
-06) BENY RESUME
-07) BENY SERVICES
-08) BENY PORTFOLIO
-09) BENY TESTIMONIALS
-10) BENY NEWS
-11) BENY CONTACT
-12) BENY COPYRIGHT
-13) BENY CURSOR
-
-
-/*--------------------------------f-------------------*/
-/*	01) BENY BASE
-/*---------------------------------------------------*/
-
 html {
 	overflow-x: hidden;
 	padding: 0px;
@@ -366,6 +341,7 @@ body.dark .loader_line:after{
 .beny_tm_topbar .logo img{
 	max-width: 90px;
 	max-height: 70px;
+	width: 50px;
 }
 .beny_tm_topbar ul{
 	margin: 0px;
@@ -671,6 +647,27 @@ body.dark .loader_line:after{
 	position: relative;
 	transition-delay: .9s;
 }
+.beny_tm_hero .mobile_social ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.beny_tm_hero .mobile_social ul li{
+	margin: 0px 10px 0px 0px;
+	display: inline-block;
+}
+.beny_tm_hero .mobile_social ul li a{
+	text-decoration: none;
+	color: #0F172A;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.beny_tm_hero .mobile_social ul li a:hover{
+	color: #D6002F;
+}
 .beny_tm_button{
 	width: 100%;
 	height: auto;
@@ -754,6 +751,45 @@ body.dark .loader_line:after{
 }
 .beny_tm_contact .beny_tm_button a{
 	padding: 10px 40px;
+}
+.beny_tm_hero .social{
+	position: absolute;
+	bottom: 60px;
+	right: -50px;
+	z-index: 2;
+	
+	-webkit-transition: all .8s ease;
+	   -moz-transition: all .8s ease;
+	    -ms-transition: all .8s ease;
+	     -o-transition: all .8s ease;
+	        transition: all .8s ease;
+}
+.beny_tm_hero .social ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.beny_tm_hero .social ul li{
+	margin: 0px 0px 20px 0px;
+}
+.beny_tm_hero .social ul li:last-child{margin-bottom: 0px;}
+.beny_tm_hero .social ul li a{
+	text-decoration: none;
+	color: #7E7E7E;
+	font-size: 18px;
+	font-weight: 500;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.beny_tm_hero .social ul li a:hover{
+	color: #D6002F;
+}
+.beny_tm_all_wrap.animate .beny_tm_hero .social{
+	right: 60px;
+	transition-delay: 1.5s;
 }
 
 /*---------------------------------------------------*/
@@ -2329,6 +2365,10 @@ body.modal{
 	.beny_tm_hero .content .job{font-size: 55px;margin-bottom: 17px;}
 	.beny_tm_button a{padding: 8px 30px;}
 	.beny_tm_hero .content .text{margin-bottom: 32px;}
+	.beny_tm_hero .social ul li{margin-bottom: 15px;}
+	.beny_tm_hero .social ul li a{font-size: 16px;}
+	.beny_tm_all_wrap.animate .beny_tm_hero .social{right: 30px;}
+	.beny_tm_hero .social{bottom: 30px;}
 	.beny_tm_services ul li h3{font-size: 22px;}
 	.beny_tm_title_holder{max-width: 550px;}
 	.beny_tm_title_holder span{margin-bottom: 2px;}

@@ -31,8 +31,20 @@ body.dark .beny_tm_topbar.animate .in{
 body.dark .beny_tm_hero .content .job{
 	color: #fff;
 }
+body.dark .beny_tm_hero .social ul li a{
+	color: #A9AFC3;
+}
+body.dark .beny_tm_hero .social ul li a:hover{
+	color: #D6002F;
+}
 body.dark .beny_tm_hero .content .name{
 	color: #fff;
+}
+body.dark .beny_tm_hero .mobile_social ul li a{
+	color: #fff;
+}
+body.dark .beny_tm_hero .mobile_social ul li a:hover{
+	color: #D6002F;
 }
 body.dark .beny_tm_button a{
 	color: #fff;

@@ -195,30 +195,6 @@ function beny_tm_nav_bg(){
 
 jQuery('.anchor_nav').onePageNav();
 
-// -----------------------------------------------------
-// ---------------   PRELOADER   -----------------------
-// -----------------------------------------------------
-
-function beny_tm_preloader(){
-	
-	"use strict";
-	
-	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-	var preloader = $('#preloader');
-	
-	if (!isMobile) {
-		setTimeout(function() {
-			preloader.addClass('preloaded');
-		}, 800);
-		setTimeout(function() {
-			preloader.remove();
-		}, 2000);
-
-	} else {
-		preloader.remove();
-	}
-}
-
 // -------------------------------------------------
 // -------------  MODALBOX NEWS  -------------------
 // -------------------------------------------------
@@ -300,12 +276,8 @@ function beny_tm_modalbox_service(){
 // -----------------------------------------------------
 
 function beny_tm_my_load(){
-	
 	"use strict";
-	
-	var speed	= 500;
-	setTimeout(function(){beny_tm_preloader();},speed);
-	setTimeout(function(){jQuery('.beny_tm_all_wrap').addClass('animate');},speed+2000);
+	setTimeout(function(){jQuery('.beny_tm_all_wrap').addClass('animate');},200);
 }
 
 // -----------------------------------------------------
