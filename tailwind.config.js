@@ -6,7 +6,11 @@ module.exports = {
     './content/**/*.md'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        hello: '#111319'
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

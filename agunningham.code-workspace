@@ -1,0 +1,16 @@
+{
+	"folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../../Downloads/themeforest-VUP2Nb4Z-beny-personal-portfolio-template"
+    }
+  ],
+	"settings": {
+		"editor.formatOnSave": true,
+		"editor.tabSize": 2,
+		"editor.detectIndentation": false,
+    "html.format.enable": true,
+	}
+}
